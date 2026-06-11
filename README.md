@@ -1,18 +1,16 @@
-# Домашнее задание к занятию "***Домашнее задание к занятию «Система мониторинга Zabbix»**
+# Домашнее задание к занятию "\***Домашнее задание к занятию «Система мониторинга Zabbix»**
 
 # " - `Ушаков Игорь Юрьевич`
-
 
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
 1. [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Code)
 
+### \***Задание 1**
 
-### ***Задание 1**
+\***Установите Zabbix Server с веб-интерфейсом.**
 
-***Установите Zabbix Server с веб-интерфейсом.**
-
-#### ***Процесс выполнения: **
+#### \*\*\*Процесс выполнения: \*\*
 
 apt update && apt upgrade -y
 
@@ -32,65 +30,57 @@ sed -i 's/;date.timezone =/date.timezone = Europe/Moscow/' /etc/php/8.3/apache2/
 
 systemctl enable --now zabbix-server zabbix-agent apache2
 
-
-` !\[авторизация в админке 1\](img/screen1.png)`
-
+` !\\\[авторизация в админке 1\\\]`(C:\\GitHub\\zabbix-1\\img\\screen1.png)
 
 ### Задание 2
 
-### ***Хост 1 – Zabbix Server (Ubuntu 24.04)**
+### \***Хост 1 – Zabbix Server (Ubuntu 24.04)**
 
-***Агент уже установлен вместе с сервером и я настраиваю его:**
-
-```
-***sed -i 's/^Server=127.0.0.1/Server=127.0.0.1,10.10.10.2,212.8.227.85/' /etc/zabbix/zabbix\_agentd.conf**
-
-
-***sed -i 's/^ServerActive=127.0.0.1/ServerActive=127.0.0.1/' /etc/zabbix/zabbix\_agentd.conf**
-
-
-***systemctl restart zabbix-agent**
-```
-
-***Пояснение: на сервере агент может работать с localhost как активный сервер, и принимать пассивные проверки от самого себя.**
-
-
-### ***Хост 2 – Windows (вторая ВМ)**
-
-1. ***`Скачал установщик агента с официального сайта и сохранил в `**
-
-***`C:\\Users\\igore\\Downloads\\zabbix\_agent-7.0.27-windows-amd64.msi.`**
-
-2. ***`Установил агент из командной строки:`**
+\***Агент уже установлен вместе с сервером и я настраиваю его:**
 
 ```
-***msiexec /i "C:\\Users\\igore\\Downloads\\zabbix\_agent-7.0.27-windows-amd64.msi" /qn ^**
-
-  ***SERVER=212.8.227.85 ^**
-
-  ***SERVERACTIVE=212.8.227.85 ^**
-
-  ***HOSTNAME=Windows-PC ^**
-
-  ***LOGFILE="C:\\Program Files\\Zabbix Agent\\zabbix\_agentd.log" ^**
-
-  ***INSTALLDIR="C:\\Program Files\\Zabbix Agent"**
+\*\*\*sed -i 's/^Server=127.0.0.1/Server=127.0.0.1,10.10.10.2,212.8.227.85/' /etc/zabbix/zabbix\\\_agentd.conf\*\*  
+  
+  
+\*\*\*sed -i 's/^ServerActive=127.0.0.1/ServerActive=127.0.0.1/' /etc/zabbix/zabbix\\\_agentd.conf\*\*  
+  
+  
+\*\*\*systemctl restart zabbix-agent\*\*
 ```
 
+\***Пояснение: на сервере агент может работать с localhost как активный сервер, и принимать пассивные проверки от самого себя.**
 
-3. *** !\[Агент сервера и агент ноута на windows \](img/screen2.png)**
+### \***Хост 2 – Windows (вторая ВМ)**
 
-4.  !\[Latest data\](img/screen3.png)
+1. \***`Скачал установщик агента с официального сайта и сохранил в `**
 
-5.  !\[***Configuration \> Hosts** \](img/screen4.png)
+\***`C:\\\\Users\\\\igore\\\\Downloads\\\\zabbix\\\_agent-7.0.27-windows-amd64.msi.`**
 
-6.  !\[log zabbix agent ноута win11 \](img/screen5.png)
+1. \***`Установил агент из командной строки:`**
 
+```
+\*\*\*msiexec /i "C:\\\\Users\\\\igore\\\\Downloads\\\\zabbix\\\_agent-7.0.27-windows-amd64.msi" /qn ^\*\*  
+  
+  \*\*\*SERVER=212.8.227.85 ^\*\*  
+  
+  \*\*\*SERVERACTIVE=212.8.227.85 ^\*\*  
+  
+  \*\*\*HOSTNAME=Windows-PC ^\*\*  
+  
+  \*\*\*LOGFILE="C:\\\\Program Files\\\\Zabbix Agent\\\\zabbix\\\_agentd.log" ^\*\*  
+  
+  \*\*\*INSTALLDIR="C:\\\\Program Files\\\\Zabbix Agent"\*\*
+```
 
+1. !\[Агент сервера и агент ноута на windows \](C:\\GitHub\\zabbix-1\\img\\screen2.png)\*\*
 
+2. !\[Latest data\](C:\\GitHub\\zabbix-1\\img\\screen3.png)
 
+3. !\[\***Configuration \> Hosts** \](C:\\GitHub\\zabbix-1\\img\\screen4.png)
+
+4. !\[log zabbix agent ноута win11 \](C:\\GitHub\\zabbix-1\\img\\screen5.png)
 
 ### Задание 3
 
+!\[log zabbix agent ноута win11 \](C:\\GitHub\\zabbix-1\\img\\screen6.png)
 
-!\[log zabbix agent ноута win11 \](img/screen6.png)
