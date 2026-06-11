@@ -38,7 +38,7 @@ systemctl enable --now zabbix-server zabbix-agent apache2
 
 \***Агент уже установлен вместе с сервером и я настраиваю его:**
 
-```
+
 \*\*\*sed -i 's/^Server=127.0.0.1/Server=127.0.0.1,10.10.10.2,212.8.227.85/' /etc/zabbix/zabbix\\\_agentd.conf\*\*  
   
   
@@ -46,7 +46,7 @@ systemctl enable --now zabbix-server zabbix-agent apache2
   
   
 \*\*\*systemctl restart zabbix-agent\*\*
-```
+
 
 \***Пояснение: на сервере агент может работать с localhost как активный сервер, и принимать пассивные проверки от самого себя.**
 
@@ -58,7 +58,7 @@ systemctl enable --now zabbix-server zabbix-agent apache2
 
 1. \***`Установил агент из командной строки:`**
 
-```
+
 \*\*\*msiexec /i "C:\\\\Users\\\\igore\\\\Downloads\\\\zabbix\\\_agent-7.0.27-windows-amd64.msi" /qn ^\*\*  
   
   \*\*\*SERVER=212.8.227.85 ^\*\*  
@@ -70,7 +70,7 @@ systemctl enable --now zabbix-server zabbix-agent apache2
   \*\*\*LOGFILE="C:\\\\Program Files\\\\Zabbix Agent\\\\zabbix\\\_agentd.log" ^\*\*  
   
   \*\*\*INSTALLDIR="C:\\\\Program Files\\\\Zabbix Agent"\*\*
-```
+
 
 1. !\[Агент сервера и агент ноута на windows \](https://github.com/poproshe/zabbix-1/blob/main/img/screen2.png)
 
