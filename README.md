@@ -30,7 +30,7 @@ sed -i 's/;date.timezone =/date.timezone = Europe/Moscow/' /etc/php/8.3/apache2/
 
 systemctl enable --now zabbix-server zabbix-agent apache2
 
-` !\\\[авторизация в админке 1\\\]`(C:\\GitHub\\zabbix-1\\img\\screen1.png)
+![админка](https://github.com/poproshe/zabbix-1/blob/main/img/screen1.png)
 
 ### Задание 2
 
@@ -72,15 +72,15 @@ systemctl enable --now zabbix-server zabbix-agent apache2
   \*\*\*INSTALLDIR="C:\\\\Program Files\\\\Zabbix Agent"\*\*
 ```
 
-1. !\[Агент сервера и агент ноута на windows \](C:\\GitHub\\zabbix-1\\img\\screen2.png)\*\*
+1. !\[Агент сервера и агент ноута на windows \](https://github.com/poproshe/zabbix-1/blob/main/img/screen2.png)
 
-2. !\[Latest data\](C:\\GitHub\\zabbix-1\\img\\screen3.png)
+2. !\[Latest data\](https://github.com/poproshe/zabbix-1/blob/main/img/screen3.png)
 
-3. !\[\***Configuration \> Hosts** \](C:\\GitHub\\zabbix-1\\img\\screen4.png)
+3. !\[\***Configuration \> Hosts** \](https://github.com/poproshe/zabbix-1/blob/main/img/screen4.png)
 
-4. !\[log zabbix agent ноута win11 \](C:\\GitHub\\zabbix-1\\img\\screen5.png)
+4. !\[log zabbix agent ноута win11 \](https://github.com/poproshe/zabbix-1/blob/main/img/screen5.png)
 
 ### Задание 3
 
-!\[log zabbix agent ноута win11 \](C:\\GitHub\\zabbix-1\\img\\screen6.png)
+!\[log zabbix agent ноута win11 \](https://github.com/poproshe/zabbix-1/blob/main/img/screen6.png)
 
